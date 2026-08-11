@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chương 2: Của Tương Lai | Kỳ Anh PMH</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            KỲ ANH PMH
+        </div>
+
+        <nav>
+
+            <a href="index.html">Trang chủ</a>
+
+            <a href="index.html#about">Giới thiệu</a>
+
+            <a href="music.html">Âm nhạc</a>
+
+            <a href="index.html#contact">Liên hệ</a>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         TIÊU ĐỀ BÀI HÁT
+    ========================== -->
+
+    <main class="music-page">
+
+        <section class="music-header">
+
+    <div class="music-cover">
+
+        <img
+            src="images/cover.jpg"
+            alt="Chương 2: Của Tương Lai - Kỳ Anh PMH"
+        >
+
+    </div>
+
+
+    <div class="music-info">
+
+        <p class="section-title">
+            ÂM NHẠC
+        </p>
+
+        <h1>
+            Chương 2: Của Tương Lai
+        </h1>
+
+        <p class="music-artist">
+            Kỳ Anh PMH
+        </p>
+
+        <p class="music-description">
+            Love You So .
+        </p>
+
+        <div class="player">
+
+    <!-- THANH TIẾN TRÌNH -->
+
+    <div class="progress-container">
+
+        <span id="currentTime">
+            00:00
+        </span>
+
+        <input
+            type="range"
+            id="progressBar"
+            value="0"
+            min="0"
+            max="100"
+        >
+
+        <span id="duration">
+            00:00
+        </span>
+
+    </div>
+
+
+    <!-- ĐIỀU KHIỂN -->
+
+    <div class="player-controls">
+
+        <button id="volumeButton">
+            🔊
+        </button>
+
+        <button id="prevButton">
+            ⏮
+        </button>
+
+        <button id="playButton">
+    ▶
+</button>
+
+<audio id="audioPlayer">
+    <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+        <button id="nextButton">
+            ⏭
+        </button>
+
+    </div>
+
+
+    <!-- ÂM LƯỢNG -->
+
+    <div class="volume-control">
+
+    <button id="volumeButton" type="button">
+        🔊
+    </button>
+
+    <input
+        type="range"
+        id="volumeBar"
+        min="0"
+        max="1"
+        step="0.01"
+        value="1"
+    >
+
+</div>
+</div>
+
+
+<audio id="audioPlayer">
+
+    <source
+        src="music/song.mp3"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+    </div>
+
+</section>
+
+
+
+        <!-- =========================
+             LỜI BÀI HÁT
+        ========================== -->
+
+
+<section class="lyrics" id="lyrics">
+
+    <!-- =========================
+         INTRO
+    ========================== -->
+
+    <div class="lyric-part">
+
+        <h3>[INTRO – SPOKEN]</h3>
+
+        <p class="lyric-line" data-time="0">
+            Kỳ Anh…
+        </p>
+
+        <p class="lyric-line" data-time="4">
+            My Tho… ngày cuối tháng bảy.
+        </p>
+
+        <p class="lyric-line" data-time="8">
+            This song…
+        </p>
+
+        <p class="lyric-line" data-time="11">
+            Is for the only girl…
+        </p>
+
+        <p class="lyric-line" data-time="15">
+            I will always love.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         VERSE 1
+    ========================== -->
+
+    <div class="lyric-part">
+
+        <h3>[VERSE 1 – RAP]</h3>
+
+        <p class="lyric-line" data-time="19">
+            I searched for every word,
+        </p>
+
+        <p class="lyric-line" data-time="22">
+            But none of them could ever be enough.
+        </p>
+
+        <p class="lyric-line" data-time="26">
+            No sentence in this world,
+        </p>
+
+        <p class="lyric-line" data-time="29">
+            Can measure how deep my heart is in love.
+        </p>
+
+        <p class="lyric-line" data-time="34">
+            Mỹ Tho hôm nay đầy nỗi nhớ,
+        </p>
+
+        <p class="lyric-line" data-time="38">
+            Nhớ về một người mà anh luôn dành trái tim.
+        </p>
+
+        <p class="lyric-line" data-time="43">
+            Con đường ấy có dài thì anh,
+        </p>
+
+        <p class="lyric-line" data-time="46">
+            Vẫn sẽ bước từng bước về phía em.
+        </p>
+
+        <p class="lyric-line" data-time="51">
+            Every morning when I open my eyes,
+        </p>
+
+        <p class="lyric-line" data-time="55">
+            You’re the first light inside my mind.
+        </p>
+
+        <p class="lyric-line" data-time="59">
+            Every night before I fall asleep,
+        </p>
+
+        <p class="lyric-line" data-time="63">
+            You’re the last dream that I can find.
+        </p>
+
+        <p class="lyric-line" data-time="67">
+            People say love can fade away,
+        </p>
+
+        <p class="lyric-line" data-time="71">
+            When seasons change and years go by.
+        </p>
+
+        <p class="lyric-line" data-time="75">
+            But every beat inside my chest
+        </p>
+
+        <p class="lyric-line" data-time="79">
+            Keeps whispering your name every night.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         PRE-CHORUS
+    ========================== -->
+
+    <div class="lyric-part">
+
+        <h3>[PRE-CHORUS]</h3>
+
+        <p class="lyric-line" data-time="84">
+            If love had a language…
+        </p>
+
+        <p class="lyric-line" data-time="88">
+            Mine would still be incomplete.
+        </p>
+
+        <p class="lyric-line" data-time="92">
+            Because every “I love you”…
+        </p>
+
+        <p class="lyric-line" data-time="96">
+            Feels too small for what I feel.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         CHORUS
+    ========================== -->
+
+    <div class="lyric-part">
+
+        <h3>[CHORUS – LOVE BALLAD]</h3>
+
+        <p class="lyric-line" data-time="101">
+            There’s no word…
+        </p>
+
+        <p class="lyric-line" data-time="104">
+            No poem…
+        </p>
+
+        <p class="lyric-line" data-time="107">
+            No melody…
+        </p>
+
+        <p class="lyric-line" data-time="110">
+            That can describe…
+        </p>
+
+        <p class="lyric-line" data-time="114">
+            How much I love you.
+        </p>
+
+        <p class="lyric-line" data-time="118">
+            You’re my sunrise…
+        </p>
+
+        <p class="lyric-line" data-time="121">
+            You’re my moonlight…
+        </p>
+
+        <p class="lyric-line" data-time="125">
+            You’re every reason…
+        </p>
+
+        <p class="lyric-line" data-time="129">
+            I still believe in tomorrow.
+        </p>
+
+        <p class="lyric-line" data-time="134">
+            Love you so…
+        </p>
+
+        <p class="lyric-line" data-time="138">
+            Forever and always.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         VERSE 2
+    ========================== -->
+
+    <div class="lyric-part">
+
+        <h3>[VERSE 2 – RAP]</h3>
+
+        <p class="lyric-line" data-time="144">
+            If I could count the stars above,
+        </p>
+
+        <p class="lyric-line" data-time="148">
+            They still wouldn’t match my love.
+        </p>
+
+        <p class="lyric-line" data-time="152">
+            If I could hold the endless sea,
+        </p>
+
+        <p class="lyric-line" data-time="156">
+            It still wouldn’t be enough to see.
+        </p>
+
+        <p class="lyric-line" data-time="160">
+            Every road keeps leading back,
+        </p>
+
+        <p class="lyric-line" data-time="164">
+            To the place where your heart stays.
+        </p>
+
+        <p class="lyric-line" data-time="168">
+            Every dream I build today,
+        </p>
+
+        <p class="lyric-line" data-time="172">
+            Has your smile in every frame.
+        </p>
+
+        <p class="lyric-line" data-time="177">
+            Nói không ngoa thì anh gọi tắt em,
+        </p>
+
+        <p class="lyric-line" data-time="181">
+            Mặt trời nơi cuối con đường anh đi.
+        </p>
+
+        <p class="lyric-line" data-time="186">
+            Mây đen có đến thì sau áng mây đó,
+        </p>
+
+        <p class="lyric-line" data-time="191">
+            Em vẫn là mặt trời chiếu sáng cho anh.
+        </p>
+
+        <p class="lyric-line" data-time="196">
+            I don’t need a perfect world,
+        </p>
+
+        <p class="lyric-line" data-time="200">
+            As long as you’re standing here.
+        </p>
+
+        <p class="lyric-line" data-time="204">
+            Because every broken piece of me,
+        </p>
+
+        <p class="lyric-line" data-time="208">
+            Finds its home when you are near.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         BRIDGE
+    ========================== -->
+
+    <div class="lyric-part">
+
+        <h3>[BRIDGE – SPOKEN]</h3>
+
+        <p class="lyric-line" data-time="214">
+            Hey…
+        </p>
+
+        <p class="lyric-line" data-time="218">
+            Maybe I don’t know the perfect words.
+        </p>
+
+        <p class="lyric-line" data-time="223">
+            Maybe I never will.
+        </p>
+
+        <p class="lyric-line" data-time="227">
+            But if my heartbeat could speak…
+        </p>
+
+        <p class="lyric-line" data-time="232">
+            It would say…
+        </p>
+
+        <p class="lyric-line" data-time="236">
+            “I love you…”
+        </p>
+
+        <p class="lyric-line" data-time="240">
+            Again…
+        </p>
+
+        <p class="lyric-line" data-time="243">
+            And again…
+        </p>
+
+        <p class="lyric-line" data-time="247">
+            Forever.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         FINAL CHORUS
+    ========================== -->
+
+    <div class="lyric-part">
+
+        <h3>[FINAL CHORUS]</h3>
+
+        <p class="lyric-line" data-time="252">
+            No dictionary…
+        </p>
+
+        <p class="lyric-line" data-time="256">
+            Can define…
+        </p>
+
+        <p class="lyric-line" data-time="260">
+            The love I keep inside.
+        </p>
+
+        <p class="lyric-line" data-time="264">
+            No song…
+        </p>
+
+        <p class="lyric-line" data-time="267">
+            Can sing it all.
+        </p>
+
+        <p class="lyric-line" data-time="271">
+            No story…
+        </p>
+
+        <p class="lyric-line" data-time="274">
+            Can tell it all.
+        </p>
+
+        <p class="lyric-line" data-time="278">
+            Because you…
+        </p>
+
+        <p class="lyric-line" data-time="282">
+            Are beyond every word…
+        </p>
+
+        <p class="lyric-line" data-time="286">
+            Beyond every dream…
+        </p>
+
+        <p class="lyric-line" data-time="290">
+            Beyond everything…
+        </p>
+
+        <p class="lyric-line" data-time="295">
+            I have ever known.
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         OUTRO
+    ========================== -->
+
+    <div class="lyric-part">
+
+        <h3>[OUTRO – SPOKEN]</h3>
+
+        <p class="lyric-line" data-time="300">
+            To my only girl…
+        </p>
+
+        <p class="lyric-line" data-time="305">
+            Thank you…
+        </p>
+
+        <p class="lyric-line" data-time="309">
+            For being the most beautiful chapter…
+        </p>
+
+        <p class="lyric-line" data-time="314">
+            Of my life.
+        </p>
+
+        <p class="lyric-line" data-time="318">
+            Love you so.
+        </p>
+
+        <p class="lyric-line" data-time="322">
+            Lưu bút…
+        </p>
+
+        <p class="lyric-line" data-time="326">
+            Kỳ Anh…
+        </p>
+
+        <p class="lyric-line" data-time="330">
+            Hai không hai sáu.
+        </p>
+
+    </div>
+
+</section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            Đây là website thuộc bản quyền của Kỳ Anh PMH.
+        </p>
+
+        <p>
+            © 2026 Kỳ Anh PMH. All Rights Reserved.
+        </p>
+
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

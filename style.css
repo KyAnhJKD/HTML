@@ -1,0 +1,1187 @@
+/* =========================
+   CÀI ĐẶT CHUNG
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #080b10;
+
+    color: white;
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: rgba(8, 11, 16, 0.85);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+
+}
+
+
+.logo {
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #66cfefb0;
+
+}
+
+
+nav {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+nav a {
+
+    position: relative;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+nav a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -8px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: #66d9ef;
+
+    transition: 0.3s;
+
+}
+
+
+nav a:hover::after {
+
+    width: 100%;
+
+}
+
+/* =========================
+   TRANG CHỦ
+========================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            #163040,
+            #080b10 70%
+        );
+
+}
+
+
+.welcome {
+
+    color: #1b6679;
+
+    letter-spacing: 5px;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h1 {
+
+    font-size: clamp(55px, 10vw, 120px);
+
+    font-weight: 800;
+
+    letter-spacing: 6px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero h2 {
+
+    font-size: clamp(20px, 4vw, 32px);
+
+    font-weight: 300;
+
+    color: #d5d5d5;
+
+    letter-spacing: 1px;
+
+}
+
+
+.slogan {
+
+    margin-top: 30px;
+
+    color: #999999;
+
+    font-size: 20px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.success {
+
+    color: #66d9ef;
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-top: 5px;
+
+}
+
+
+/* =========================
+   NÚT
+========================= */
+
+.button {
+
+    display: inline-block;
+
+    margin-top: 40px;
+
+    padding: 15px 40px;
+
+    border: 1px solid #66d9ef;
+
+    border-radius: 50px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.button:hover {
+
+    background: #66d9ef;
+
+    color: #080b10;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 30px rgba(102, 217, 239, 0.2);
+
+}
+
+
+/* =========================
+   CÁC SECTION
+========================= */
+
+.section {
+
+    min-height: 70vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+}
+
+
+.section-title {
+
+    color: #66d9ef;
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.section h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.description {
+
+    max-width: 700px;
+
+    color: #aaa;
+
+    font-size: 18px;
+
+}
+
+
+/* =========================
+   ÂM NHẠC
+========================= */
+
+.music {
+
+    background: #0d141c;
+
+}
+
+
+/* =========================
+   LIÊN HỆ
+========================= */
+
+.contact {
+
+    background: #101820;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: #05070a;
+
+    color: #777;
+
+}
+
+
+footer p {
+
+    margin: 8px;
+
+}
+
+
+/* =========================
+   ĐIỆN THOẠI
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+
+        padding: 15px 20px;
+
+    }
+
+
+    nav {
+
+        gap: 12px;
+
+    }
+
+
+    nav a {
+
+        font-size: 12px;
+
+    }
+
+
+    .hero h2 {
+
+        font-size: 22px;
+
+    }
+
+
+    .section h2 {
+
+        font-size: 35px;
+
+    }
+
+}
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 75px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 8%;
+
+    background: rgba(8, 11, 16, 0.85);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    z-index: 1000;
+}
+/* =========================
+   TRANG ÂM NHẠC
+========================= */
+
+.music-page {
+
+    padding-top: 120px;
+
+    min-height: 100vh;
+
+}
+
+
+/* TIÊU ĐỀ BÀI HÁT */
+
+.music-header {
+
+    text-align: center;
+
+    padding: 100px 20px 80px;
+
+}
+
+
+.music-header h1 {
+
+    font-size: clamp(40px, 7vw, 80px);
+
+    margin-bottom: 20px;
+
+}
+
+
+.music-subtitle {
+
+    color: #66d9ef;
+
+    font-size: 20px;
+
+}
+
+
+.music-description {
+
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+    
+}
+
+
+/* KHU VỰC LỜI BÀI HÁT */
+
+.lyrics {
+
+    width: 90%;
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+/* TỪNG PHẦN */
+
+.lyric-section {
+
+    padding: 70px 0;
+
+    border-bottom: 1px solid #202a33;
+
+}
+
+
+/* INTRO / VERSE / CHORUS */
+
+.lyric-section h3 {
+
+    text-align: center;
+
+    color: #66d9ef;
+
+    font-size: 25px;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* TỪNG DÒNG */
+
+.lyric-section p {
+
+    text-align: center;
+
+    color: #d0d0d0;
+
+    font-size: 18px;
+
+    margin: 8px 0;
+
+}
+
+
+/* TIẾNG ANH */
+
+.lyric-section em {
+
+    color: #66d9ef;
+
+}
+
+
+/* DÒNG QUAN TRỌNG */
+
+.lyric-section .important {
+
+    color: white;
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    margin-top: 25px;
+
+}
+
+
+/* CHORUS */
+
+.chorus-section {
+
+    padding: 100px 20px;
+
+    margin: 50px 0;
+
+    border-radius: 20px;
+
+    background: rgba(102, 217, 239, 0.04);
+
+}
+
+
+/* FINAL CHORUS */
+
+.final-chorus {
+
+    text-align: center;
+
+    padding: 120px 20px;
+
+}
+
+
+/* OUTRO */
+
+.outro-section {
+
+    text-align: center;
+
+    padding: 120px 20px;
+
+}
+
+
+/* ĐIỆN THOẠI */
+
+@media (max-width: 700px) {
+
+    .music-header {
+
+        padding: 70px 15px;
+
+    }
+
+
+    .lyric-section {
+
+        padding: 50px 5px;
+
+    }
+
+
+    .lyric-section p {
+
+        font-size: 16px;
+
+    }
+
+
+    .lyric-section h3 {
+
+        font-size: 22px;
+
+    }
+
+}
+/* =========================
+   MUSIC HEADER
+========================= */
+
+.music-header {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 80px;
+
+    padding: 140px 8% 100px;
+
+}
+
+
+/* ẢNH BÌA */
+
+.music-cover {
+
+    width: 420px;
+
+    height: 420px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.music-cover img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.5s ease;
+
+}
+
+
+.music-cover:hover img {
+
+    transform: scale(1.05);
+
+}
+
+
+/* THÔNG TIN BÀI */
+
+.music-info {
+
+    max-width: 600px;
+
+}
+
+
+.music-info h1 {
+
+    font-size: clamp(40px, 5vw, 70px);
+
+    line-height: 1.1;
+
+    margin: 15px 0;
+
+}
+
+
+.music-artist {
+
+    color: #66d9ef;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+
+.music-description {
+
+    color: #999;
+
+    font-size: 18px;
+
+    margin-top: 20px;
+
+    max-width: 500px;
+
+}
+/* =========================
+   PLAY BUTTON
+========================= */
+
+.play-button {
+
+    margin-top: 35px;
+
+    padding: 16px 35px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #66d9ef;
+
+    color: #080b10;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.play-button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 30px rgba(102, 217, 239, 0.3);
+
+}
+
+
+.play-button.playing {
+
+    background: #ffffff;
+
+}
+@media (max-width: 800px) {
+
+    .music-header {
+
+        flex-direction: column;
+
+        gap: 50px;
+
+        padding: 120px 20px 80px;
+
+        text-align: center;
+
+    }
+
+
+    .music-cover {
+
+        width: 300px;
+
+        height: 300px;
+
+    }
+
+
+    .music-info {
+
+        width: 100%;
+
+    }
+
+
+    .music-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+}
+/* =========================
+   MUSIC PLAYER
+========================= */
+
+.player {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    margin-top: 40px;
+
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+}
+
+
+/* THANH TIẾN TRÌNH */
+
+.progress-container {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+}
+
+
+.progress-container span {
+
+    color: #888;
+
+    font-size: 12px;
+
+    min-width: 40px;
+
+}
+
+
+#currentTime {
+
+    text-align: left;
+
+}
+
+
+#duration {
+
+    text-align: right;
+
+}
+
+
+/* RANGE */
+
+#progressBar {
+
+    flex: 1;
+
+    cursor: pointer;
+
+    accent-color: #66d9ef;
+
+}
+
+
+/* CÁC NÚT */
+
+.player-controls {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-top: 25px;
+
+}
+
+
+.player-controls button {
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #1a222b;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+
+}
+
+
+.player-controls button:hover {
+
+    background: #66d9ef;
+
+    color: #080b10;
+
+    transform: scale(1.08);
+
+}
+
+
+/* NÚT PLAY CHÍNH */
+
+.player-controls .main-play-button {
+
+    width: 65px;
+
+    height: 65px;
+
+    background: #66d9ef;
+
+    color: #080b10;
+
+    font-size: 22px;
+
+}
+
+
+.player-controls .main-play-button:hover {
+
+    background: white;
+
+    transform: scale(1.1);
+
+}
+
+
+/* ÂM LƯỢNG */
+
+.volume-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+#volumeBar {
+
+    width: 120px;
+
+    accent-color: #66d9ef;
+
+    cursor: pointer;
+
+}
+/* =========================
+   COVER ANIMATION
+========================= */
+
+.music-cover.playing {
+
+    animation: rotateCover 12s linear infinite;
+
+}
+
+
+@keyframes rotateCover {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+@media (max-width: 600px) {
+
+    .player {
+
+        width: 95%;
+
+        padding: 20px 15px;
+
+    }
+
+
+    .player-controls {
+
+        gap: 15px;
+
+    }
+
+
+    .player-controls button {
+
+        width: 40px;
+
+        height: 40px;
+
+    }
+
+
+    .player-controls .main-play-button {
+
+        width: 58px;
+
+        height: 58px;
+
+    }
+
+
+    .volume-container {
+
+        margin-top: 15px;
+
+    }
+
+}
+audio {
+    width: 100%;
+    max-width: 650px;
+    margin-top: 30px;
+}
+/* =========================
+   KARAOKE LYRICS
+========================= */
+
+.lyric-line {
+
+    opacity: 0.45;
+
+    transform: scale(1);
+
+    transition:
+        0.4s ease;
+
+    margin: 12px 0;
+
+}
+
+
+/* CÂU ĐANG HÁT */
+
+.lyric-line.active {
+
+    opacity: 1;
+
+    transform: scale(1.08);
+
+    color: #66d9ef;
+
+    font-weight: bold;
+
+    text-shadow:
+        0 0 15px rgba(102, 217, 239, 0.5);
+
+}
+
+
+/* ========================================
+   LYRICS
+======================================== */
+
+.lyrics {
+    max-width: 850px;
+    margin: 80px auto;
+    padding: 30px 20px;
+}
+
+.lyric-part {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.lyric-part h3 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.lyric-line {
+    margin: 16px 0;
+
+    line-height: 1.8;
+
+    color: #777;
+
+    opacity: 0.45;
+
+    transform: scale(1);
+
+    transition:
+        color 0.3s ease,
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        text-shadow 0.3s ease;
+}
+
+
+/* DÒNG ĐANG HÁT */
+
+.lyric-line.active {
+
+    color: #66d9ef;
+
+    opacity: 1;
+
+    transform: scale(1.05);
+
+    font-weight: 700;
+
+    text-shadow:
+        0 0 8px rgba(102, 217, 239, 0.5),
+        0 0 20px rgba(102, 217, 239, 0.25);
+
+}
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#volumeButton {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#volumeBar {
+    width: 130px;
+    cursor: pointer;
+}
